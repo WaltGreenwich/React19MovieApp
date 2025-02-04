@@ -2,7 +2,7 @@ import Search from "./components/Search";
 import { useState } from "react";
 
 const App = () => {
-  const [searchTerm, setSearchTerm] = useState("I'm Batman");
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <main>
@@ -18,6 +18,7 @@ const App = () => {
         </header>
 
         <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        <h1 className="text-white">{searchTerm}</h1>
       </div>
     </main>
   );
